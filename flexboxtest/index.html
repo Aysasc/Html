@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Lorem News!\</title>
+        <link rel="stylesheet" type="text/css" href="est.css">
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var navLinks = document.querySelectorAll('#navbar a');
+              navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  var target = document.querySelector(this.getAttribute('href'));
+                  if (target) {
+                    var offset = target.offsetTop - document.getElementById('header').offsetHeight;
+                    window.scrollTo({
+                      top: offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                });
+              });
+            });
+          </script>
+        
+        
+    </head>
+        <body>
+
+
+            <section id="header" class="sticky">
+                 <img src="assets/logo.png" style="width: 70px;">
+
+                 <section id="navbar">
+                    <a id="1" href="#header"> Início </a>
+                    <a id="2" href="#"> Sobre </a>
+                    <a id="3" href="#rodape"> Contato</a>
+
+
+                 </section>
+
+            </section>
+
+            <script>
+                var lastScrollPos = 0;
+                var header = document.getElementById('header');
+            
+                window.addEventListener('scroll', function() {
+                  var currentScrollPos = window.pageYOffset;
+            
+                  if (currentScrollPos > lastScrollPos) {
+                    header.style.top = '-100px';
+                  } else {
+                    header.style.top = '0';
+                  }
+            
+                  lastScrollPos = currentScrollPos;
+                });
+              </script>
+                  
+
+            <section id="banner">
+                <h1>Lorem News</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.</p>
+              </section>
+
+
+
+              <section>
+                <h2 id="news-title" >Notícias</h2>
+            
+                <section id="news">
+                   
+                    <div class="news-card">
+                        <h4>Política</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices metus in justo congue tristique. Pellentesque tincidunt rhoncus lectus, nec faucibus mauris ullamcorper nec. Nullam laoreet euismod semper. Duis vulputate auctor facilisis. Donec malesuada eros vel diam lobortis, eget efficitur risus pharetra. Quisque volutpat ultrices leo, at tincidunt nulla eleifend eu.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Ciência e Tecnologia</h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris et turpis quis mi aliquam euismod. Integer gravida pharetra hendrerit. In hac habitasse platea dictumst. Nunc tristique enim id magna sagittis, non aliquet arcu gravida. Sed at quam rutrum, maximus lorem ac, cursus est.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Saúde e Bem-estar</h4>
+                        <p>Sed eget augue vulputate, elementum lorem vel, facilisis est. In eu mauris vitae purus pharetra commodo. Sed sagittis finibus est at tempus. Integer scelerisque odio ligula, id aliquam massa semper vitae. Morbi interdum feugiat risus nec vulputate. Vivamus vestibulum, ligula nec rutrum suscipit, arcu tortor viverra lorem, vel luctus enim odio nec nunc.</p>
+                        <button class="btn-more">Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Economia e Finanças</h4>
+                        <p>Proin tristique pellentesque tellus. In euismod neque non nulla gravida, vel venenatis lorem pulvinar. Duis nec massa in nibh ultricies faucibus. Fusce at nunc eget velit luctus consectetur sed eget nisi. Vivamus lobortis quam nec aliquam iaculis. Nullam non tellus commodo, iaculis mauris id, dapibus metus.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Cultura e Entretenimento</h4>
+                        <p>Aenean fermentum dapibus mi vel cursus. Integer sollicitudin tortor sit amet tellus mattis, in consectetur quam congue. Cras id felis ac leo venenatis scelerisque ac vel turpis. Morbi accumsan eleifend risus ut vulputate. Nullam rutrum risus in sapien aliquet, in venenatis arcu finibus. Mauris semper pulvinar neque, id facilisis mauris cursus id.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Segurança e Justiça</h4>
+                        <p>Vestibulum quis massa eget erat eleifend lacinia. Etiam pellentesque cursus mi, et congue nulla tempor at. Pellentesque a mauris luctus, placerat lorem id, aliquam ex. Morbi cursus viverra ultrices. In finibus nisi sed lectus aliquam, id tincidunt neque facilisis. Curabitur finibus mi id tincidunt auctor.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Moda e Estilo</h4>
+                        <p>Phasellus in sagittis risus. Sed faucibus varius turpis ac vestibulum. Mauris dignissim leo a ligula scelerisque, id dignissim massa tempor. Sed suscipit sem vel metus vulputate, eget bibendum tellus efficitur. Curabitur eget fringilla urna. Nulla facilisi. Phasellus euismod vulputate pulvinar.</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Inovação e Empreendedorismo</h4>
+                        <p>Quisque eget elit id quam lobortis dapibus id in risus. Vestibulum vitae mi ut ex viverra rutrum nec non tellus. Duis et suscipit velit. Praesent eu ligula rutrum, bibendum nisl ut, aliquet eros</p>
+                        <button class="btn-more" >Ver +</button>
+                    </div>
+            
+                    <div class="news-card">
+                        <h4>Celebridades e Fama</h4>
+                        <p>Fusce maximus ex vel est feugiat, eu mattis justo commodo. Nullam ut semper felis. Nunc pretium orci nec magna efficitur, ac varius justo faucibus. Phasellus feugiat enim eget fringilla fermentum. Maecenas volutpat diam ut mauris interdum, non eleifend felis luctus. Integer a ligula hendrerit, aliquet turpis in, venenatis tortor.
+
+
+
+                        </p>
+                        <button class="btn-more">Ver +</button>
+                    </div>
+            
+                </section>
+
+                <div class="btn-container">
+                    <button class="btn-more">Ver todas</button>
+                </div>
+                
+            </section>
+
+            <a> ‎ </a>
+            
+            
+
+            <section id="rodape">
+
+                <div class="endereco" id="endereco">
+
+                    <p> <strong> Telefone: </strong> (XX) XXXX-XXXX</p>
+                    <p> <strong> Email: </strong> loremnews@hotmail.com</p>
+                    <p> <strong> Endereço: </strong>
+                        Rua XXX XX, Cidade - XX
+                    </p>
+                </div>
+
+                <img src="assets/logo.png" alt="">
+                <div class="creator">
+                    <p> <strong>Desenvolvido por: </strong> Isaac Alves</a></p>
+                </div>
+
+            </section>
+            
+            <section id="rodape2">
+                <p>Todos os direitos reservados. ©</p>
+            </section>
+              
+   
+
+
+   
+        </body>
+</html>
+
+
